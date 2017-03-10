@@ -1,0 +1,43 @@
+{
+  "name": "api-api/storage-wordpress-usermeta",
+  "description": "Storage implementation using WordPress user metadata.",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "keywords": [
+    "api-api",
+    "storage",
+    "storage-wordpress-usermeta"
+  ],
+  "homepage": "http://awesome.ug",
+  "authors": [
+    {
+      "name": "Felix Arntz",
+      "email": "felix-arntz@leaves-and-love.net",
+      "homepage": "https://leaves-and-love.net",
+      "role": "Lead Developer"
+    },
+    {
+      "name": "Sven Wagener",
+      "email": "sven@awesome.ug",
+      "homepage": "http://awesome.ug",
+      "role": "Head of Development"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/api-api/storage-wordpress-usermeta/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "APIAPI\\Storage_WordPress_Usermeta\\": "src/Storage_WordPress_Usermeta/"
+    },
+    "files": [
+      "src/storage-wordpress-usermeta.php"
+    ]
+  },
+  "require": {
+    "api-api/core": "*"
+  }
+}
