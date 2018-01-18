@@ -2,7 +2,7 @@
 /**
  * Storage_WordPress_Usermeta class
  *
- * @package APIAPIStorageWordPressUsermeta
+ * @package APIAPI\Storage_WordPress_Usermeta
  * @since 1.0.0
  */
 
@@ -22,7 +22,6 @@ if ( ! class_exists( 'APIAPI\Storage_WordPress_Usermeta\Storage_WordPress_Userme
 		 * Gets the array values are stored in.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 *
 		 * @param string $basename The basename under which to store.
 		 * @return array Array with stored data.
@@ -40,12 +39,11 @@ if ( ! class_exists( 'APIAPI\Storage_WordPress_Usermeta\Storage_WordPress_Userme
 		 * Updates the array values are stored in.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 *
 		 * @param string $basename The basename under which to store.
 		 * @param array  $data     Array with updated data.
 		 */
-		protected function update_array( $basename, $data ) {
+		protected function update_array( $basename, array $data ) {
 			update_user_meta( get_current_user_id(), $basename, $data );
 		}
 
@@ -53,7 +51,6 @@ if ( ! class_exists( 'APIAPI\Storage_WordPress_Usermeta\Storage_WordPress_Userme
 		 * Deletes the array values are stored in.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 *
 		 * @param string $basename The basename under which to store.
 		 */

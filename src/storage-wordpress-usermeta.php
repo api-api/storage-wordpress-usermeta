@@ -2,7 +2,7 @@
 /**
  * Storage loader.
  *
- * @package APIAPIStorageWordPressUsermeta
+ * @package APIAPI\Storage_WordPress_Usermeta
  * @since 1.0.0
  */
 
